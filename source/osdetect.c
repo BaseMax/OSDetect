@@ -8,3 +8,23 @@
  * @Repository : https://github.com/BaseMax/OSDetect
  *
  **/
+// char *OS() {
+const char *OS() {
+	#ifdef _WIN32
+		return "Windows 32";
+	#elif _WIN64
+		return "Windows 64";
+	#elif __APPLE__ || __MACH__
+		return "MacOS";
+	#elif __linux__
+		return "Linux";
+	#elif __FreeBSD__
+		return "FreeBSD";
+	#elif __unix || __unix__
+		return "Unix";
+	#endif
+	// #else
+	// 	return "unknown";
+	// #endif
+	return "other";
+}
