@@ -10,6 +10,7 @@
  **/
 #ifndef OSDETECT
 	#define OSDETECT
+	const char *OS();
 	#if defined(_WIN32) || defined(_WIN64)
 		#define OSDETECT_WINDOWS
 	#elif defined(__APPLE__) || defined(__MACH__)
