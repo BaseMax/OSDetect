@@ -14,3 +14,8 @@ int main() {
 	return 0;
 }
 ```
+
+### Compile
+```
+gcc test.c source/osdetect.c -o test
+```
