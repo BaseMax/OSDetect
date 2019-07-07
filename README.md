@@ -16,6 +16,7 @@ int main() {
 ```
 
 ### Compile
+
 ```
 gcc test.c source/osdetect.c -o test
 ```
